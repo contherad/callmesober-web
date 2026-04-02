@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+/* ── Dark mode via class (for next-themes) ───────────── */
+@variant dark (&:where(.dark, .dark *));
+
+/* ── Brand Design Tokens ─────────────────────────────── */
+
+:root {
+  --primary: #E8550C;
+  --primary-foreground: #FFF5EA;
+  --background: #FFF6EF;
+  --foreground: #161616;
+  --card: #F9F9F9;
+  --card-foreground: #161616;
+  --border: #D3D3D3;
+  --input: #D3D3D3;
+  --muted: #A0A0A0;
+  --muted-foreground: #161616;
+  --accent: #FFFAEA;
+  --accent-foreground: #F49A0A;
+  --success: #39AC85;
+  --destructive: #DB2323;
+  --destructive-foreground: #FDF0F0;
+  --secondary: #212121;
+  --secondary-foreground: #F9F9F9;
+  --subtle-text: #555555;
+  --tagline-text: #777777;
+  --ring: #E8550C;
+  --radius: 0.75rem;
+
+  --hero-glow: rgba(232, 85, 12, 0.08);
+  --section-gradient-from: #FFF6EF;
+  --section-gradient-to: #FFF0E4;
+}
+
+.dark {
+  --primary: #F98F38;
+  --primary-foreground: #FFFFFF;
+  --background: #161616;
+  --foreground: #F9F9F9;
+  --card: #232323;
+  --card-foreground: #F9F9F9;
+  --border: #515151;
+  --input: #515151;
+  --muted: #727272;
+  --muted-foreground: #F9F9F9;
+  --accent: #441803;
+  --accent-foreground: #FABD23;
+  --success: #39AC85;
+  --destructive: #EE4343;
+  --destructive-foreground: #FDF0F0;
+  --secondary: #727272;
+  --secondary-foreground: #F9F9F9;
+  --subtle-text: #9CA3AF;
+  --tagline-text: #9CA3AF;
+  --ring: #F98F38;
+
+  --hero-glow: rgba(249, 143, 56, 0.06);
+  --section-gradient-from: #161616;
+  --section-gradient-to: #1a1206;
+}
+
+/* ── Tailwind v4 Theme ───────────────────────────────── */
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-success: var(--success);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-subtle: var(--subtle-text);
+  --color-tagline: var(--tagline-text);
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-roboto);
+  --font-serif: var(--font-libre-caslon-text);
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+}
+
+/* ── Base Styles ─────────────────────────────────────── */
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* ── Hero Glow ───────────────────────────────────────── */
+
+.hero-glow {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, var(--hero-glow) 0%, transparent 70%),
+    var(--background);
+}
+
+.section-warm-gradient {
+  background: linear-gradient(180deg, var(--section-gradient-from) 0%, var(--section-gradient-to) 100%);
+}
+
+/* ── Animations ──────────────────────────────────────── */
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.9; }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.5; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
+
+@keyframes pulse-ring-outer {
+  0% { transform: scale(1); opacity: 0.3; }
+  100% { transform: scale(1.8); opacity: 0; }
+}
+
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-breathe {
+  animation: breathe 4s ease-in-out infinite;
+}
+
+.animate-pulse-ring {
+  animation: pulse-ring 2.5s ease-out infinite;
+}
+
+.animate-pulse-ring-outer {
+  animation: pulse-ring-outer 3s ease-out infinite 0.4s;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out both;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Staggered fade-in for children */
+.stagger-children > * {
+  opacity: 0;
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+.stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
+.stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
+.stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
+.stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
+
+/* ── Accordion ───────────────────────────────────────── */
+
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+.accordion-chevron {
+  transition: transform 0.2s ease;
+}
+
+/* ── Glass Card ──────────────────────────────────────── */
+
+.glass-card {
+  background: color-mix(in srgb, var(--card) 80%, transparent);
+  backdrop-filter: blur(12px);
+  border: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+}
