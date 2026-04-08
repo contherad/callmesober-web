@@ -1,5 +1,8 @@
 'use server';
 
+import { appendBetaSignup } from '@/lib/google-sheets';
+import { notifyBetaSignup } from '@/lib/notify';
+
 type BetaResult = { success: boolean; error?: string };
 
 export async function submitBetaSignup(
@@ -25,32 +28,13 @@ export async function submitBetaSignup(
     return { success: false, error: 'Please select a platform.' };
   }
 
-  const supabaseUrl = process.env.SUPABASE_URL;
-  const supabaseKey = process.env.SUPABASE_ANON_KEY;
-
-  if (!supabaseUrl || !supabaseKey) {
-    // If Supabase is not configured, log and return success message
-    console.log(`Beta signup: ${email} (${platform})`);
-    return { success: true };
-  }
-
   try {
-    // Insert into a beta_signups table (you'll need to create this table in Supabase)
-    const res = await fetch(`${supabaseUrl}/rest/v1/beta_signups`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${supabaseKey}`,
-        apikey: supabaseKey,
-        Prefer: 'return=minimal',
-      },
-      body: JSON.stringify({ email, platform }),
-    });
+    await appendBetaSignup(email, platform);
 
-    if (!res.ok && res.status !== 409) {
-      // 409 = duplicate, which is fine
-      throw new Error(`Supabase responded with ${res.status}`);
-    }
+    // Fire-and-forget: don't block the user on email notification
+    notifyBetaSignup(email, platform).catch((err) =>
+      console.error('Notification error:', err),
+    );
 
     return { success: true };
   } catch (err) {
