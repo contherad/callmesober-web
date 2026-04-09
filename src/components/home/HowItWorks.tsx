@@ -4,7 +4,7 @@ const STEPS = [
   {
     icon: Download,
     title: 'Download the app',
-    description: 'Free on iOS and Android. No account required beyond a phone number.',
+    description: 'Free on iOS and Android. Just sign up with your email and you\u2019re ready to go.',
     accent: 'from-primary/20 to-primary/5',
   },
   {
