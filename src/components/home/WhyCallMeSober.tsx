@@ -37,7 +37,7 @@ export default function WhyCallMeSober() {
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">Why Call Me Sober</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5">
-            Built for the 2 AM moment
+            Built for the &ldquo;should I or shouldn&rsquo;t I&rdquo; moment
           </h2>
           <p className="text-lg text-subtle max-w-2xl mx-auto leading-relaxed">
             When you need to hear a human voice &mdash; not read a text, not attend a meeting, not schedule a session. We&apos;re here.
