@@ -93,7 +93,7 @@ export default function AboutPage() {
       <section>
         <h2 className="text-lg font-bold text-foreground mb-3">The Team</h2>
         <p className="text-sm text-muted leading-relaxed mb-2">
-          Call Me Sober is operated by Southworth Group, LLC.
+          Call Me Sober is operated by Beehavr LLC.
         </p>
         <p className="text-sm text-muted">
           Questions? Reach out at{' '}

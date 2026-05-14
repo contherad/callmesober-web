@@ -58,7 +58,7 @@ export default function SafetyPage() {
               <strong className="text-foreground">Important:</strong> This is peer support, not professional counseling or medical advice. Our listeners are not licensed therapists or healthcare providers.
             </p>
             <p className="mt-4">
-              <strong className="text-foreground">Operated by:</strong> Southworth Group, LLC
+              <strong className="text-foreground">Operated by:</strong> Beehavr LLC
             </p>
           </div>
         </section>

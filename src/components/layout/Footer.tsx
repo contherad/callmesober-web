@@ -74,7 +74,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-muted">
-          <p>&copy; {new Date().getFullYear()} Southworth Group, LLC. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Beehavr LLC. All rights reserved.</p>
           <p>
             <a href={`mailto:${SUPPORT_EMAIL}`} className="hover:text-foreground transition-colors">
               {SUPPORT_EMAIL}

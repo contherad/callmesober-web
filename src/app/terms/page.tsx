@@ -10,13 +10,13 @@ export default function TermsPage() {
   return (
     <article className="max-w-3xl mx-auto px-6 py-12 md:py-20">
       <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Terms of Service</h1>
-      <p className="text-subtle mb-10">Last updated: January 30, 2026</p>
+      <p className="text-subtle mb-10">Last updated: May 13, 2026</p>
 
       <div className="space-y-8 text-sm text-muted leading-relaxed">
         <section>
           <h2 className="text-lg font-bold text-foreground mb-3">Agreement to Terms</h2>
           <p>
-            By using Call Me Sober (&ldquo;the App&rdquo;), you agree to these Terms of Service. The App is operated by Southworth Group, LLC (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;). If you do not agree to these terms, please do not use the App.
+            By using Call Me Sober (&ldquo;the App&rdquo;), you agree to these Terms of Service. The App is operated by Beehavr LLC (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;). If you do not agree to these terms, please do not use the App.
           </p>
         </section>
 
@@ -85,14 +85,14 @@ export default function TermsPage() {
         <section>
           <h2 className="text-lg font-bold text-foreground mb-3">Limitation of Liability</h2>
           <p className="uppercase text-xs">
-            To the maximum extent permitted by law, Southworth Group, LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to personal injury, emotional distress, or loss of data, arising from your use of the App.
+            To the maximum extent permitted by law, Beehavr LLC shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to personal injury, emotional distress, or loss of data, arising from your use of the App.
           </p>
         </section>
 
         <section>
           <h2 className="text-lg font-bold text-foreground mb-3">Indemnification</h2>
           <p>
-            You agree to indemnify and hold harmless Southworth Group, LLC from any claims, damages, or expenses arising from your use of the App or violation of these terms.
+            You agree to indemnify and hold harmless Beehavr LLC from any claims, damages, or expenses arising from your use of the App or violation of these terms.
           </p>
         </section>
 
@@ -114,7 +114,7 @@ export default function TermsPage() {
           <h2 className="text-lg font-bold text-foreground mb-3">Contact Us</h2>
           <p>If you have questions about these Terms of Service, please contact us at:</p>
           <p className="mt-2">
-            <strong className="text-foreground">Southworth Group, LLC</strong>
+            <strong className="text-foreground">Beehavr LLC</strong>
             <br />
             Email:{' '}
             <a href={`mailto:${LEGAL_EMAIL}`} className="text-foreground underline">
