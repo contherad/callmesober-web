@@ -13,11 +13,13 @@ export default function FounderStory() {
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">
             Why we built this
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            A founder&apos;s story
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4 leading-[1.15]">
+            We&rsquo;ve never been more connected.
+            <br />
+            Yet never more alone.
           </h2>
           <p className="text-lg text-subtle max-w-2xl mx-auto leading-relaxed">
-            The reason Call Me Sober exists &mdash; in the founder&apos;s own words.
+            A short film about addiction, isolation, and the power of human connection.
           </p>
         </div>
 
