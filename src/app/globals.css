@@ -198,15 +198,6 @@ details[open] .accordion-chevron {
   transition: transform 0.2s ease;
 }
 
-/* ── lite-youtube-embed ──────────────────────────────── */
-
-/* Library's own stylesheet sets max-width: 720px and loads AFTER our globals,
-   so we bump specificity with [videoid] (0,1,1) to beat lite-yt-embed.css (0,0,1). */
-lite-youtube[videoid] {
-  max-width: 100%;
-  width: 100%;
-}
-
 /* ── Glass Card ──────────────────────────────────────── */
 
 .glass-card {

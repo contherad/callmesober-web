@@ -1,4 +1,4 @@
-import { YouTubeEmbed } from '@next/third-parties/google';
+import VideoFacade from '@/components/ui/VideoFacade';
 import { founderStoryVideoSchema } from '@/lib/schema';
 
 export default function FounderStory() {
@@ -23,11 +23,11 @@ export default function FounderStory() {
           </p>
         </div>
 
-        <div className="relative rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(232,85,12,0.12)] border border-border bg-background">
-          <YouTubeEmbed
-            videoid="97ASAZ88pJg"
-            params="rel=0"
-            playlabel="Play: A founder's story"
+        <div className="relative rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(232,85,12,0.12)] border border-border">
+          <VideoFacade
+            videoId="97ASAZ88pJg"
+            poster="/founder-story-poster.jpg"
+            title="A short film about addiction, isolation, and the power of human connection"
           />
         </div>
       </div>

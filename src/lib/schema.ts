@@ -35,7 +35,7 @@ export function founderStoryVideoSchema() {
       'Call Me Sober is an anonymous peer-to-peer support platform built for people struggling with addiction, cravings, relapse urges, or isolation. When someone feels close to drinking or using, they can instantly connect with another human being who understands what they’re going through. Real conversations with people who have lived experience in addiction and recovery — designed as an additional layer of support during the moments that matter most.',
     thumbnailUrl: [
       'https://i.ytimg.com/vi/97ASAZ88pJg/hqdefault.jpg',
-      'https://i.ytimg.com/vi/97ASAZ88pJg/maxresdefault.jpg',
+      'https://i.ytimg.com/vi/97ASAZ88pJg/sddefault.jpg',
     ],
     uploadDate: '2026-05-08T08:02:13-07:00',
     duration: 'PT1M31S',
