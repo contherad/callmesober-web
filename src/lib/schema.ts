@@ -1,4 +1,4 @@
-import { SITE_URL, SITE_NAME, SUPPORT_EMAIL } from './constants';
+import { SITE_URL, SITE_NAME, SUPPORT_EMAIL, APP_STORE_URL } from './constants';
 
 export function organizationSchema() {
   return {
@@ -23,6 +23,23 @@ export function websiteSchema() {
     '@type': 'WebSite',
     name: SITE_NAME,
     url: SITE_URL,
+  };
+}
+
+export function mobileAppSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'MobileApplication',
+    name: SITE_NAME,
+    operatingSystem: 'iOS',
+    applicationCategory: 'HealthApplication',
+    url: SITE_URL,
+    downloadUrl: APP_STORE_URL,
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
   };
 }
 

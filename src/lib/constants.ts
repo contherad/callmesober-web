@@ -11,6 +11,6 @@ export const LEGAL_EMAIL = 'legal@callmesober.com';
 
 export const SHARE_MESSAGE = 'Call Me Sober \u2014 a simple way to talk to someone who gets it. No judgment. Just a call.';
 
-// Beta links — update when apps are published
-export const TESTFLIGHT_URL = '#';
-export const GOOGLE_PLAY_BETA_URL = '#';
+// App store links
+export const APP_STORE_URL = 'https://apps.apple.com/us/app/call-me-sober/id6758549444';
+export const GOOGLE_PLAY_URL = '#'; // Android — coming soon
