@@ -31,7 +31,7 @@ export function mobileAppSchema() {
     '@context': 'https://schema.org',
     '@type': 'MobileApplication',
     name: SITE_NAME,
-    operatingSystem: 'iOS',
+    operatingSystem: 'iOS, Android',
     applicationCategory: 'HealthApplication',
     url: SITE_URL,
     downloadUrl: APP_STORE_URL,

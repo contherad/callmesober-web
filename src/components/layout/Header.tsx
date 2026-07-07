@@ -2,10 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Menu, X, Moon, Sun } from 'lucide-react';
+import { Menu, X, Moon, Sun, Download } from 'lucide-react';
 import { useTheme } from 'next-themes';
-import { AppleLogo } from '@/components/ui/BrandLogos';
-import { APP_STORE_URL } from '@/lib/constants';
 
 const NAV_LINKS = [
   { href: '/about', label: 'About' },
@@ -59,15 +57,13 @@ export default function Header() {
             <Moon className="w-[18px] h-[18px] dark:hidden" />
           </button>
 
-          <a
-            href={APP_STORE_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/#download"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground text-sm font-medium px-6 py-2.5 rounded-full hover:brightness-110 transition-all shadow-[0_2px_12px_rgba(232,85,12,0.3)]"
           >
-            <AppleLogo className="w-4 h-4" />
+            <Download className="w-4 h-4" />
             Download
-          </a>
+          </Link>
         </nav>
 
         {/* Mobile controls */}
@@ -104,16 +100,14 @@ export default function Header() {
             </Link>
           ))}
           <div className="pt-3">
-            <a
-              href={APP_STORE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/#download"
               onClick={() => setMobileOpen(false)}
               className="flex items-center justify-center gap-2 bg-primary text-primary-foreground text-center font-medium px-6 py-3.5 rounded-full hover:brightness-110 transition-all shadow-[0_2px_12px_rgba(232,85,12,0.3)]"
             >
-              <AppleLogo className="w-4 h-4" />
-              Download on the App Store
-            </a>
+              <Download className="w-4 h-4" />
+              Download the App
+            </Link>
           </div>
         </nav>
       )}

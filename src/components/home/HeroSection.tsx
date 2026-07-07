@@ -2,7 +2,6 @@ import { HEADLINE, SUBHEADLINE, TAGLINE } from '@/lib/constants';
 import { Phone } from 'lucide-react';
 import AppStoreButton from '@/components/ui/AppStoreButton';
 import GooglePlayBadge from '@/components/ui/GooglePlayBadge';
-import WaitlistForm from '@/components/ui/WaitlistForm';
 
 export default function HeroSection() {
   return (
@@ -46,20 +45,14 @@ export default function HeroSection() {
           &ldquo;{TAGLINE}&rdquo;
         </p>
 
-        {/* Download — iPhone live now, Android coming soon */}
-        <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }} id="download">
+        {/* Download — live on iPhone and Android */}
+        <div className="animate-fade-in-up scroll-mt-36" style={{ animationDelay: '0.4s' }} id="download">
           <div className="flex flex-col items-center">
-            <AppStoreButton />
-            <p className="text-sm text-muted mt-3">Now available for iPhone</p>
-          </div>
-
-          <div className="mt-10 pt-8 border-t border-border/60 max-w-md mx-auto flex flex-col items-center">
-            <GooglePlayBadge />
-            <p className="text-sm font-medium text-foreground mt-3 mb-1">Coming soon to Android</p>
-            <p className="text-sm text-subtle mb-4">
-              Join the wait list and we&apos;ll let you know the moment it&apos;s ready.
-            </p>
-            <WaitlistForm id="waitlist" />
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
+              <AppStoreButton />
+              <GooglePlayBadge />
+            </div>
+            <p className="text-sm text-muted mt-3">Free on iPhone and Android</p>
           </div>
         </div>
       </div>

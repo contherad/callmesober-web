@@ -13,4 +13,4 @@ export const SHARE_MESSAGE = 'Call Me Sober \u2014 a simple way to talk to someo
 
 // App store links
 export const APP_STORE_URL = 'https://apps.apple.com/us/app/call-me-sober/id6758549444';
-export const GOOGLE_PLAY_URL = '#'; // Android — coming soon
+export const GOOGLE_PLAY_URL = 'https://play.google.com/store/apps/details?id=com.callmesober.app';
