@@ -4,7 +4,7 @@ import { Smartphone } from 'lucide-react';
 
 export default function DownloadCTA() {
   return (
-    <section className="py-20 md:py-32 bg-card relative overflow-hidden">
+    <section id="download" className="py-20 md:py-32 bg-card relative overflow-hidden scroll-mt-28">
       {/* Decorative */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/[0.04] rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
 

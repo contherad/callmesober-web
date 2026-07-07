@@ -38,14 +38,12 @@ export const metadata: Metadata = {
     title: `${SITE_NAME} \u2014 Anonymous Peer Support Hotline`,
     description:
       'Free, anonymous peer support for addiction recovery. Talk to someone who gets it.',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: SITE_NAME }],
   },
   twitter: {
     card: 'summary_large_image',
     title: `${SITE_NAME} \u2014 Anonymous Peer Support Hotline`,
     description:
       'Free, anonymous peer support for addiction recovery. No judgment. Just a call.',
-    images: ['/og-image.jpg'],
   },
   icons: {
     icon: '/favicon.svg',

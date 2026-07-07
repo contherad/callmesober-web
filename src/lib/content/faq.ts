@@ -1,7 +1,7 @@
 export const FAQ_DATA = [
   {
     q: 'What is Call Me Sober?',
-    a: 'Call Me Sober is a free, anonymous addiction hotline that connects you with peers who understand recovery. Instead of professional counselors, you talk to real people who have been through addiction and can offer genuine support without judgment.',
+    a: 'Call Me Sober is a free, anonymous addiction hotline that connects you with peers who understand recovery. Instead of professional counselors, you talk to real people who have been through addiction and can offer genuine support without judgment. Around the calls, the app also includes a gentle sobriety tracker, an AI voice coach, anonymous community boards, and self-set reminders.',
   },
   {
     q: 'Is the addiction hotline really anonymous?',
@@ -26,6 +26,22 @@ export const FAQ_DATA = [
   {
     q: 'How long are the support calls?',
     a: 'Calls last up to 20 minutes. This keeps the line available for others while still providing meaningful support when you need it most.',
+  },
+  {
+    q: 'How does the Sobriety Tracker work?',
+    a: 'The tracker is a quiet, private record of your days — no streaks, no scorekeeping. Start from your recovery date, start from today, or skip the count entirely and just check in. Gentle daily check-ins ask how nourished, calm, connected, rested, and grounded you feel, and milestones like day 1, 7, 30, 90, 180, and 365 are celebrated softly. If you slip, the clock resets compassionately — your history is never wiped, and what you learned stays with you.',
+  },
+  {
+    q: 'What is the AI Sobriety Coach?',
+    a: 'The AI Sobriety Coach is a short, judgment-free voice conversation you can start anytime — a few minutes, your voice, whatever’s on your mind. It won’t lecture or keep score. Coach sessions are saved privately to your account (visible only to you) and you can delete your coach data anytime in Settings. Like everything in the app, it’s peer-style support, not an emergency service.',
+  },
+  {
+    q: 'What is the Community?',
+    a: 'Community is a set of anonymous, text-only, moderated discussion boards inside the app — places like Early Recovery, Cravings & Triggers, Wins & Milestones, and Need Support. Share what you’re going through, cheer someone on, or ask the questions you can’t ask anywhere else. Be kind — everyone here is working on something.',
+  },
+  {
+    q: 'What are Reminders?',
+    a: 'Reminders are gentle nudges you set for yourself — to journal, call a friend, do some breath work, get to a meeting, or anything else that helps. Set them daily, weekly, or one-time. They stay on your device and always arrive as a note from you, to you.',
   },
   {
     q: 'Is this a crisis hotline or emergency service?',

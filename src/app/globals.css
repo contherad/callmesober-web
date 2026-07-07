@@ -3,6 +3,16 @@
 /* ── Dark mode via class (for next-themes) ───────────── */
 @variant dark (&:where(.dark, .dark *));
 
+/* ── Smooth scrolling for in-page anchors (e.g. #download) ── */
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 /* ── Brand Design Tokens ─────────────────────────────── */
 
 :root {

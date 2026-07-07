@@ -46,7 +46,7 @@ export default function HeroSection() {
         </p>
 
         {/* Download — live on iPhone and Android */}
-        <div className="animate-fade-in-up scroll-mt-36" style={{ animationDelay: '0.4s' }} id="download">
+        <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
           <div className="flex flex-col items-center">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
               <AppStoreButton />
