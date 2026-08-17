@@ -46,7 +46,7 @@ export const metadata: Metadata = {
       'Free, anonymous peer support for addiction recovery. No judgment. Just a call.',
   },
   icons: {
-    icon: '/favicon.svg',
+    icon: '/favicon.png',
     apple: '/apple-touch-icon.png',
   },
 };

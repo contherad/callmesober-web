@@ -1,4 +1,4 @@
-import { HEADLINE, SUBHEADLINE, TAGLINE } from '@/lib/constants';
+import { HEADLINE, SUBHEADLINE } from '@/lib/constants';
 import { Phone } from 'lucide-react';
 import AppStoreButton from '@/components/ui/AppStoreButton';
 import GooglePlayBadge from '@/components/ui/GooglePlayBadge';
@@ -33,20 +33,12 @@ export default function HeroSection() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-lg sm:text-xl md:text-2xl text-subtle max-w-2xl mx-auto mb-6 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+        <p className="text-lg sm:text-xl md:text-2xl text-subtle max-w-2xl mx-auto mb-12 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
           {SUBHEADLINE}
         </p>
 
-        {/* Tagline */}
-        <p
-          className="font-serif italic text-tagline text-base md:text-lg mb-12 animate-fade-in-up"
-          style={{ animationDelay: '0.3s' }}
-        >
-          &ldquo;{TAGLINE}&rdquo;
-        </p>
-
         {/* Download — live on iPhone and Android */}
-        <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+        <div className="animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
           <div className="flex flex-col items-center">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
               <AppStoreButton />

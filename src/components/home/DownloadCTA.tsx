@@ -1,10 +1,24 @@
 import AppStoreButton from '@/components/ui/AppStoreButton';
 import GooglePlayBadge from '@/components/ui/GooglePlayBadge';
 import { Smartphone } from 'lucide-react';
+import ArtDirectedImage from '@/components/ui/ArtDirectedImage';
 
 export default function DownloadCTA() {
   return (
     <section id="download" className="py-20 md:py-32 bg-card relative overflow-hidden scroll-mt-28">
+      {/* Photo backdrop — scrim in the card color keeps the headline and store
+          badges fully legible in both themes. */}
+      <div className="absolute inset-0" aria-hidden="true">
+        <ArtDirectedImage
+          name="sober-friends-recovery-community-connection"
+          alt=""
+          width={2400}
+          height={1610}
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-card/90" />
+      </div>
+
       {/* Decorative */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/[0.04] rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
 

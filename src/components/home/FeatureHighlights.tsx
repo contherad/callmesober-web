@@ -1,4 +1,5 @@
 import { CalendarHeart, Mic, MessagesSquare, BellRing } from 'lucide-react';
+import ArtDirectedImage from '@/components/ui/ArtDirectedImage';
 
 const FEATURES = [
   {
@@ -34,6 +35,16 @@ export default function FeatureHighlights() {
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-primary/[0.03] rounded-full blur-3xl translate-y-1/2 -translate-x-1/4 pointer-events-none" aria-hidden="true" />
 
       <div className="relative max-w-6xl mx-auto px-6 lg:px-10">
+        <div className="rounded-3xl overflow-hidden mb-14 md:mb-16 aspect-[16/9] sm:aspect-[2/1]">
+          <ArtDirectedImage
+            name="addiction-recovery-support-call-at-night"
+            alt="A man sitting on the edge of his bed at night, on the phone"
+            width={2400}
+            height={1340}
+            className="w-full h-full object-cover"
+          />
+        </div>
+
         <div className="text-center mb-16">
           <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">More Than a Hotline</p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5">

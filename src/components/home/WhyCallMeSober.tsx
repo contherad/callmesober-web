@@ -1,4 +1,5 @@
 import { Lock, Heart, Shield, Phone } from 'lucide-react';
+import ArtDirectedImage from '@/components/ui/ArtDirectedImage';
 
 const VALUES = [
   {
@@ -34,14 +35,27 @@ export default function WhyCallMeSober() {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/[0.03] rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none" aria-hidden="true" />
 
       <div className="relative max-w-6xl mx-auto px-6 lg:px-10">
-        <div className="text-center mb-16">
-          <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">Why Call Me Sober</p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5">
-            Built for the &ldquo;should I or shouldn&rsquo;t I&rdquo; moment
-          </h2>
-          <p className="text-lg text-subtle max-w-2xl mx-auto leading-relaxed">
-            When you need to hear a human voice &mdash; not read a text, not attend a meeting, not schedule a session. We&apos;re here.
-          </p>
+        {/* Portrait pairs with the copy — the person on the other end of the call. */}
+        <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,5fr)_minmax(0,6fr)] gap-10 lg:gap-14 items-center mb-16">
+          <div className="relative rounded-3xl overflow-hidden aspect-[4/3] w-full">
+            <ArtDirectedImage
+              name="craving-support-call-parked-car"
+              alt="A man sitting in his parked car at dusk, on the phone"
+              width={2400}
+              height={1610}
+              className="w-full h-full object-cover"
+            />
+          </div>
+
+          <div>
+            <p className="text-sm font-medium text-primary uppercase tracking-wider mb-3">Why Call Me Sober</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5">
+              Built for the &ldquo;should I or shouldn&rsquo;t I&rdquo; moment
+            </h2>
+            <p className="text-lg text-subtle leading-relaxed">
+              When you need to hear a human voice &mdash; not read a text, not attend a meeting, not schedule a session. We&apos;re here.
+            </p>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6 stagger-children">
