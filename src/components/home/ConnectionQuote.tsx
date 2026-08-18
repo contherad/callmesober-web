@@ -4,7 +4,7 @@ export default function ConnectionQuote() {
   const [firstSentence] = TAGLINE.split(' It’s ');
 
   return (
-    <section className="py-24 md:py-36 bg-card relative overflow-hidden">
+    <section className="py-24 md:py-36 bg-background relative overflow-hidden">
       {/* Decorative element */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/[0.05] rounded-full blur-3xl pointer-events-none" aria-hidden="true" />
 
