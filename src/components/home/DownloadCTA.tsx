@@ -12,8 +12,8 @@ export default function DownloadCTA() {
         <ArtDirectedImage
           name="sober-friends-recovery-community-connection"
           alt=""
-          width={2400}
-          height={1610}
+          width={1600}
+          height={1073}
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-card/90" />
